@@ -4,7 +4,7 @@
  * @Author: shirley
  * @Date: 2022-06-30 14:24:08
  * @LastEditors: shirley
- * @LastEditTime: 2022-07-07 16:47:02
+ * @LastEditTime: 2022-07-08 16:44:38
  */
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const path = require("path");
@@ -24,6 +24,7 @@ module.exports = {
     hot: true,
     port: 5000,
     compress: true,
+    historyApiFallback: true,
     // contentBase: "./src",
   },
   // loaders: [
@@ -45,6 +46,10 @@ module.exports = {
         options: {
           presets: ["es2015", "react"],
         },
+      },
+      {
+        test: /\.css$/,
+        use: ["style-loader", "css-loader"],
       },
     ],
   },
