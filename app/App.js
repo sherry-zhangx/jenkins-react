@@ -4,7 +4,7 @@
  * @Author: shirley
  * @Date: 2022-07-08 16:45:05
  * @LastEditors: shirley
- * @LastEditTime: 2022-07-11 09:22:06
+ * @LastEditTime: 2022-07-27 16:26:20
  */
 import React from "react";
 
@@ -39,10 +39,10 @@ const routes = [
 ];
 const App = () => (
   <BrowserRouter>
-    <Routes>{rotuerViews(routerItems)}</Routes>
-    {/* <Routes>
+    {/* <Routes>{rotuerViews(routerItems)}</Routes> */}
+    <Routes>
       <Route path="/" element={<Home />} />
-    </Routes> */}
+    </Routes>
   </BrowserRouter>
 );
 
